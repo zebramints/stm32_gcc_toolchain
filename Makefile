@@ -25,9 +25,8 @@ SOURCES = $(wildcard $(BOARD)/src/*.c) \
 
 OBJECTS = $(addprefix $(BUILDDIR)/, $(addsuffix .o, $(basename $(SOURCES))))
 
-ELF = $(BUILDDIR)/$(PROGRAM).elf
-HEX = $(BUILDDIR)/$(PROGRAM).hex
 BIN = $(BUILDDIR)/$(PROGRAM).bin
+ELF = $(BUILDDIR)/$(PROGRAM).elf
 MAP = $(BUILDDIR)/$(PROGRAM).map
 
 CC = arm-none-eabi-gcc
